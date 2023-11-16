@@ -68,7 +68,7 @@ void main(){
         print("Age Should be in numbers");
         continue b;
       }
-      // file.writeAsStringSync('${student.name} ${student.age} ${student.department}\n', mode: FileMode.append);
+
       }
       file.writeAsStringSync('${student.name} ${student.age} ${student.department}\n', mode: FileMode.append);
       }
@@ -118,7 +118,7 @@ void main(){
       try{
       teacher.display();
       int? num = int.parse(stdin.readLineSync()!);
-        switch(num){
+      switch(num){
       case 1: {
       print("How many Teachers you want to enter");
       int? std = int.parse(stdin.readLineSync()!);
@@ -179,7 +179,7 @@ void main(){
       
     }
       case 3: {
-       File file = File('Staff.txt');
+      File file = File('Staff.txt');
       Staff staff = new Staff();
       b: while(true){
       try{
@@ -257,5 +257,3 @@ void main(){
     main();
   }
   }
-  
-  
